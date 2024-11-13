@@ -1,0 +1,89 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* About Me Section */
+#about {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Projects Section */
+#projects {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Project title styling */
+.project {
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title a:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+/* Project description styling with reserved space to prevent jumping */
+.project-description {
+  max-height: 150px; /* Reserve space for descriptions */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  overflow: hidden;
+  color: #555;
+  padding-top: 5px; /* Space between title and description */
+}
+
+.project-description.show {
+  opacity: 1; /* Fade-in effect on hover */
+}
